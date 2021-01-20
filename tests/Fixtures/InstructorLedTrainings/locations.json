@@ -1,0 +1,14 @@
+{
+    "locations": [
+        {
+            "id": 10000,
+            "title": "Conference Room 1, LearnUpon Location",
+            "address_1": "1 Unknown Boulevard",
+            "address_2": "San Francisco",
+            "address_3": "CA 94107",
+            "timezone": "Pacific Time (US & Canada)",
+            "country_code": "US",
+            "notes": "Car parking available at the rear of the building"
+        }
+    ]
+}

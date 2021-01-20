@@ -1,0 +1,22 @@
+{
+    "instructor_users":[
+        {
+            "id" : 1000002,
+            "username" : "",
+            "email" : "wideorbitdemouser1@luptest.com",
+            "first_name" : "Berengar",
+            "last_name" : "Hesse",
+            "instructor_pm_id" : 1000000,
+            "user_type" : "instructor"
+        },
+        {
+            "id" : 1000003,
+            "username" : "",
+            "email" : "wideorbitdemouser13@luptest.com",
+            "first_name" : "Charles",
+            "last_name" : "Martel",
+            "instructor_pm_id" : 1000000,
+            "user_type" : "instructor"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "exam": {
+        "name": "Geography Test",
+        "is_survey": false,
+        "exam_id": 100000,
+        "is_timed_exam": true,
+        "pass_percentage": 80,
+        "pass_mark": null,
+        "is_knowledge_check": false,
+        "attempts": 3,
+        "time_for_exam": 3
+    }
+}

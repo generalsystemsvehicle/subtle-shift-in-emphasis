@@ -1,0 +1,19 @@
+{
+    "group_manager": [
+        {
+            "id": 100000,
+            "group_id": 100000,
+            "group_title": "LearnUpon Group",
+            "description": "",
+            "can_create_users": false,
+            "number_of_members": 1,
+            "number_of_courses": 0,
+            "user_id": 1000001,
+            "email": "learnuponapi@samplelearningco.com",
+            "first_name": "Learn",
+            "last_name": "Upon",
+            "created_at": "1975-10-10T10:10:10Z",
+            "updated_at": "1975-10-10T10:10:10Z"
+        }
+    ]
+}

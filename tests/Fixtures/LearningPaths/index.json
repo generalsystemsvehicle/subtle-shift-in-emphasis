@@ -1,0 +1,26 @@
+{
+    "learning_paths": [
+        {
+            "id": 10000,
+            "name": "LearnUpon Learning Path",
+            "sellable": false,
+            "cataloged": false,
+            "keywords": null,
+            "due_days_after_enrollment": null,
+            "send_due_date_reminders": false,
+            "due_date_reminder_days": null,
+            "due_date_reminder_days_2": null,
+            "minute_length": null,
+            "path_length_unit": "minutes",
+            "price": 0,
+            "published_status_id": "published",
+            "difficulty_level": "not_applicable",
+            "description_html": "",
+            "description_text": "",
+            "credits_to_be_awarded": "",
+            "created_at": "1975-10-10T10:10:10Z",
+            "date_published": "1975-10-10T10:10:10Z",
+            "due_date_after_enrollment": null
+        }
+    ]
+}

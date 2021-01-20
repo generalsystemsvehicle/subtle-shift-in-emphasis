@@ -1,0 +1,11 @@
+{
+    "group": [
+        {
+            "id": 100000,
+            "title": "LearnUpon Group",
+            "description": "",
+            "created_at": "1975-10-10T10:10:10Z",
+            "updated_at": "1975-10-10T10:10:10Z"
+        }
+    ]
+}

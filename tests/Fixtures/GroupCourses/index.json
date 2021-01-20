@@ -1,0 +1,11 @@
+{
+    "group_courses": [
+        {
+            "id": 100000,
+            "group_id": 100000,
+            "course_id": 1000000,
+            "group_title": "LearnUpon Group",
+            "course_name": "LearnUpon Course"
+        }
+    ]
+}

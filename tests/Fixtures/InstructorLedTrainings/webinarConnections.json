@@ -1,0 +1,9 @@
+{
+    "webinar_connections": [
+        {
+            "id": 1000,
+            "name": "WebEx Training Center (Site: 100000, User: LearnUpon)",
+            "has_default_password": true
+        }
+    ]
+}

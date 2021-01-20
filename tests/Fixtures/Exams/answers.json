@@ -1,0 +1,43 @@
+{
+    "exam_id": 100000,
+    "questions": [
+        {
+            "question_text": "<p>What us the tallest mountain in the US?</p>\r\n",
+            "answers": {
+                "correct_answer": [
+                    "Mount McKinley"
+                ],
+                "given_answer": [
+                    "Mount McKinley"
+                ]
+            },
+            "overall_status": "correct"
+        },
+        {
+            "question_text": "<p>What is the largest mountain north of the Carolinas and east of the Mississippi?</p>\r\n",
+            "answers": {
+                "correct_answer": [
+                    "Mount Washington"
+                ],
+                "given_answer": [
+                    "Mount Washington"
+                ]
+            },
+            "overall_status": "correct"
+        },
+        {
+            "question_text": "<p>What is the northern most city in the continental US with more than 50,000 people?</p>\r\n",
+            "answers": {
+                "correct_answer": [
+                    "Bellingham, WA"
+                ],
+                "given_answer": [
+                    "Bellingham, WA"
+                ]
+            },
+            "overall_status": "correct"
+        }
+    ],
+    "user": "Learn Upon",
+    "email": "learnuponapi@samplelearningco.com"
+}

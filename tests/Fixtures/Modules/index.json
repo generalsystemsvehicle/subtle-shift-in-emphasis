@@ -1,0 +1,39 @@
+{
+    "modules": [
+        {
+            "id": 1000000,
+            "title": "Learn Upon Module",
+            "number_of_linked_courses": 3,
+            "tags": null,
+            "created_at": "1975-10-10T10:10:10Z",
+            "updated_at": "1975-10-10T10:10:10Z",
+            "exam_id": 100000,
+            "component_type": "exam",
+            "description_html": "",
+            "description_text": "",
+            "creator_id": 1000000,
+            "creator_first_name": "Learn",
+            "creator_last_name": "Upon",
+            "creator_email": "learnuponapi@samplelearningco.com",
+            "assignment_passing_percentage": "",
+            "assignment_question_html": "",
+            "assignment_question_text": "",
+            "location_id": "",
+            "location": "",
+            "address_1": "",
+            "address_2": "",
+            "address_3": "",
+            "location_country_code": "",
+            "location_state_code": "",
+            "start_at": "",
+            "end_at": "",
+            "timezone": "UTC",
+            "number_enrolled_on_session": 0,
+            "max_capacity": 0,
+            "session_tutor_id": "",
+            "tutor_first_name": "",
+            "tutor_last_name": "",
+            "tutor_email": ""
+        }
+    ]
+}

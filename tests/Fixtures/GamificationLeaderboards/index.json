@@ -1,0 +1,13 @@
+{
+    "users": [
+        {
+            "user_id" : 1000000,
+            "login" : "learnuponapi@samplelearningco.com",
+            "name" : "Learn Upon",
+            "position" : 1,
+            "level" : null,
+            "total_points" : 5000,
+            "total_badges" : 50
+        }
+    ]
+}

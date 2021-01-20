@@ -1,0 +1,24 @@
+{
+    "exam_enrollments": [
+        {
+            "exam_id": 100000,
+            "exam_enrollment_id": 10000000,
+            "status": "Failed",
+            "time_taken": 41.0,
+            "attempts_used": 1,
+            "score": 0,
+            "user_id": 1000000,
+            "portal_membership_id": 10000000
+        },
+        {
+            "exam_id": 100000,
+            "exam_enrollment_id": 10000001,
+            "status": "Passed",
+            "time_taken": 13.0,
+            "attempts_used": 1,
+            "score": 100,
+            "user_id": 1000001,
+            "portal_membership_id": 10000001
+        }
+    ]
+}

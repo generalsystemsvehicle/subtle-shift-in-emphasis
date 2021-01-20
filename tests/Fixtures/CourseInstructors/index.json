@@ -1,0 +1,40 @@
+{
+    "course_instructor": [
+        {
+            "id": 100000,
+            "enrollment_count": 0,
+            "course_id": 1000000,
+            "course_name": "LearnUpon Course",
+            "version": 1,
+            "keywords": null,
+            "reference_code": "",
+            "user_id": 1000001,
+            "email": "learnuponapi@samplelearningco.com",
+            "first_name": "Learn",
+            "last_name": "Upon",
+            "owner_user_id": 1000000,
+            "owner_email": "ofcourse@samplelearningco.com",
+            "owner_first_name": "Of Course",
+            "owner_last_name": "I Still Love You",
+            "sellable": false,
+            "cataloged": false,
+            "manager_can_enroll": true,
+            "allow_users_rate_course": true,
+            "number_of_reviews": 0,
+            "number_of_stars": 0,
+            "minute_length": 40,
+            "price": 0,
+            "published_status_id": "under_revision",
+            "course_length_unit": "hours",
+            "difficulty_level": "not_applicable",
+            "description_html": "",
+            "description_text": "",
+            "objectives_html": "",
+            "objectives_text": "",
+            "created_at": "1975-10-10T10:10:10Z",
+            "updated_at": "1975-10-10T10:10:10Z",
+            "course_created_at": "1975-10-10T10:10:10Z",
+            "date_published": "1975-10-10T10:10:10Z"
+        }
+      ]
+}

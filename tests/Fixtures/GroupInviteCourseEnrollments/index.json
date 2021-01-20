@@ -1,0 +1,21 @@
+{
+    "group_invite_course_enrollment": [
+        {
+            "id": 1000000,
+            "group_invite_id": 1000000,
+            "user_id": null,
+            "invite_email_address": "learnuponapi@samplelearningco.com",
+            "num_reminders_sent": 0,
+            "first_name": "Learn",
+            "last_name": "Upon",
+            "group_id": null,
+            "course_name": "LearnUpon Course",
+            "course_id": 1000000,
+            "invite_status": "sent",
+            "created_at": "1975-10-10T10:10:10Z",
+            "last_reminder_sent_at": null,
+            "accept_url": "/accept_invitation/abcd",
+            "user_type": "learner"
+        }
+    ]
+}

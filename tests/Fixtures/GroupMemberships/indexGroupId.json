@@ -1,0 +1,12 @@
+{
+    "user": [
+        {
+            "id": 1000001,
+            "first_name": "Learn",
+            "last_name": "Upon",
+            "email": "learnuponapi@samplelearningco.com",
+            "created_at": "1975-10-10T10:10:10Z",
+            "locale": "en"
+        }
+    ]
+}

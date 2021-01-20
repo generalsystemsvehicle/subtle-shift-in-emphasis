@@ -1,0 +1,104 @@
+{
+    "exam_id": 100000,
+    "questions": [
+        {
+            "question_id": 1000000,
+            "question_text": "<p>What is the northern most city in the continental US with more than 50,000 people?</p>\r\n",
+            "question_type": "choice",
+            "question_choice_type": "single",
+            "points": 1,
+            "answers": [
+                {
+                    "answer_id": 1000000,
+                    "answer_text": "Bellingham, WA",
+                    "sequence": 0,
+                    "is_correct": 1
+                },
+                {
+                    "answer_id": 1000001,
+                    "answer_text": "Detroit, MI",
+                    "sequence": 1,
+                    "is_correct": 0
+                },
+                {
+                    "answer_id": 1000002,
+                    "answer_text": "Bangor, Maine",
+                    "sequence": 2,
+                    "is_correct": 0
+                },
+                {
+                    "answer_id": 1000003,
+                    "answer_text": "Billings, Montana",
+                    "sequence": 3,
+                    "is_correct": 0
+                }
+            ]
+        },
+        {
+            "question_id": 1000001,
+            "question_text": "<p>What is the largest mountain north of the Carolinas and east of the Mississippi?</p>\r\n",
+            "question_type": "choice",
+            "question_choice_type": "single",
+            "points": 1,
+            "answers": [
+                {
+                    "answer_id": 1000004,
+                    "answer_text": "Mount Lafayette",
+                    "sequence": 0,
+                    "is_correct": 0
+                },
+                {
+                    "answer_id": 1000005,
+                    "answer_text": "Mount Whitney",
+                    "sequence": 1,
+                    "is_correct": 0
+                },
+                {
+                    "answer_id": 1000006,
+                    "answer_text": "Mount Adams",
+                    "sequence": 2,
+                    "is_correct": 0
+                },
+                {
+                    "answer_id": 1000007,
+                    "answer_text": "Mount Washington",
+                    "sequence": 3,
+                    "is_correct": 1
+                }
+            ]
+        },
+        {
+            "question_id": 1000002,
+            "question_text": "<p>What us the tallest mountain in the US?</p>\r\n",
+            "question_type": "choice",
+            "question_choice_type": "single",
+            "points": 1,
+            "answers": [
+                {
+                    "answer_id": 1000008,
+                    "answer_text": "Mount Rainier",
+                    "sequence": 0,
+                    "is_correct": 0
+                },
+                {
+                    "answer_id": 1000009,
+                    "answer_text": "Mount Washington",
+                    "sequence": 1,
+                    "is_correct": 0
+                },
+                {
+                    "answer_id": 1000010,
+                    "answer_text": "Mount McKinley",
+                    "sequence": 2,
+                    "is_correct": 1
+                },
+                {
+                    "answer_id": 1000011,
+                    "answer_text": "Mount Whitney",
+                    "sequence": 3,
+                    "is_correct": 0
+                }
+            ]
+        }
+    ]
+}

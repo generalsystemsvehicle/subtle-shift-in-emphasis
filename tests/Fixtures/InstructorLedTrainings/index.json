@@ -1,0 +1,21 @@
+{
+    "ilts": [
+        {
+            "course_id": 1000000,
+            "course_name": "LearnUpon Course",
+            "session_enrollment_type": 0,
+            "component_title": "LearnUpon ILT Webinar",
+            "description": "",
+            "start_date": "1975-10-10T10:10:10Z",
+            "end_date": "1975-10-10T10:10:10Z",
+            "max_capacity": 25,
+            "instructor_name": "Of Course I Still Love You",
+            "location_id": null,
+            "location_title": null,
+            "timezone": "Pacific Time (US & Canada)",
+            "session_type": "webinar",
+            "webinar_connection_name": "WebEx Training Center (Site: 100000, User: LearnUpon)",
+            "webinar_title": "WebEx Webinar"
+        }
+    ]
+}

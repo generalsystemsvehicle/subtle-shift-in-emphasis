@@ -1,0 +1,24 @@
+{
+    "enrollments": [
+        {
+            "id": 1000000,
+            "percentage": null,
+            "lp_id": 10000,
+            "lp_name": "LearnUpon Learning Path",
+            "user_id": 1000000,
+            "first_name": "Learn",
+            "last_name": "Upon",
+            "email": "learnuponapi@samplelearningco.com",
+            "certificate_name": null,
+            "unenrolled": false,
+            "status": "not_started",
+            "due_date": null,
+            "date_started": null,
+            "date_completed": null,
+            "date_lastaccessed": null,
+            "date_enrolled": "1975-10-10T10:10:10Z",
+            "cert_expires_at": null,
+            "was_recertified": false
+        }
+    ]
+}

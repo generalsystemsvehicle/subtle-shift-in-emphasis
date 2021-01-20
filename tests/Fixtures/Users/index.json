@@ -1,0 +1,65 @@
+{
+    "customDataFieldDefinitions": [
+        {
+            "id": 10000,
+            "type_id": 1,
+            "label": "custom_id"
+        }
+    ],
+    "user": [
+        {
+            "id": 1000000,
+            "first_name": "Of Course",
+            "last_name": "I Still Love You",
+            "email": "ofcourse@samplelearningco.com",
+            "sign_in_count": 1337,
+            "number_of_enrollments": 0,
+            "number_of_enrollments_accessed": 0,
+            "created_at": "1975-10-10T10:10:10Z",
+            "last_sign_in_at": "1975-10-10T10:10:10Z",
+            "account_expires": null,
+            "sf_user_id": null,
+            "sf_contact_id": null,
+            "is_salesforce_contact": 0,
+            "CustomData": null,
+            "customDataFieldValues": [],
+            "locale": "en",
+            "enabled": true,
+            "user_type": "admin",
+            "can_enroll": true,
+            "can_delete_users": false,
+            "can_unenroll_users": false,
+            "can_move_groups": false,
+            "can_mark_complete": false,
+            "tutor_can_edit_their_courses": true,
+            "tutor_can_create_courses": false
+        },
+        {
+            "id": 1000001,
+            "first_name": "Learn",
+            "last_name": "Upon",
+            "email": "learnuponapi@samplelearningco.com",
+            "sign_in_count": 1337,
+            "number_of_enrollments": 0,
+            "number_of_enrollments_accessed": 0,
+            "created_at": "2012-12-18T15:30:09Z",
+            "last_sign_in_at": "1975-10-10T10:10:10Z",
+            "account_expires": null,
+            "sf_user_id": null,
+            "sf_contact_id": null,
+            "is_salesforce_contact": 0,
+            "CustomData": null,
+            "customDataFieldValues": [],
+            "locale": "de",
+            "enabled": true,
+            "user_type": "learner",
+            "can_enroll": true,
+            "can_delete_users": false,
+            "can_unenroll_users": false,
+            "can_move_groups": false,
+            "can_mark_complete": false,
+            "tutor_can_edit_their_courses": true,
+            "tutor_can_create_courses": false
+        }
+    ]
+}

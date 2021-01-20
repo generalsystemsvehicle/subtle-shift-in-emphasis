@@ -1,0 +1,16 @@
+{
+    "badges": [
+        {
+            "id" : 1000000,
+            "name" : "LearnUpon Badge",
+            "points" : 100,
+            "is_used" : true,
+            "badge_type_id" : 1000000,
+            "badge_type" : "LearnUpon Badge Type",
+            "created_by" : 1000000,
+            "updated_by" : 1000000,
+            "created_at" : "1975-10-10T10:10:10Z",
+            "updated_at" : "1975-10-10T10:10:10Z"
+        }
+    ]
+}

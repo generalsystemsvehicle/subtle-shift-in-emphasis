@@ -1,0 +1,62 @@
+{
+    "name": "generalsystemsvehicle/subtle-shift-in-emphasis",
+    "description": "LearnUpon API PHP SDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brian Wells",
+            "email": "wells@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5 || ^7.0.1",
+        "illuminate/support": "^6.11 || ^7.0 || ^8.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^5.0",
+        "nunomaduro/larastan": "^0.6.10",
+        "orchestra/testbench": "^6.5",
+        "phpunit/phpunit": "^9.3",
+        "rregeer/phpunit-coverage-check": "^0.3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "GeneralSystemsVehicle\\LearnUpon\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GeneralSystemsVehicle\\LearnUpon\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "cp -Rfp .githooks/. .git/hooks/; chmod +x .git/hooks/*"
+        ],
+        "test": [
+            "phpdbg -qrr vendor/phpunit/phpunit/phpunit --coverage-clover .phpunit/clover.xml --coverage-html .phpunit/coverage --coverage-text",
+            "coverage-check .phpunit/clover.xml 100",
+            "phpstan analyse --level=max"
+        ],
+        "phpunit": "phpunit",
+        "coverage": [
+            "phpdbg -qrr vendor/phpunit/phpunit/phpunit --coverage-clover .phpunit/clover.xml --coverage-html .phpunit/coverage --coverage-text",
+            "coverage-check .phpunit/clover.xml 100"
+        ],
+        "phpstan": "phpstan analyse --level=max"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GeneralSystemsVehicle\\LearnUpon\\LearnUponServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
