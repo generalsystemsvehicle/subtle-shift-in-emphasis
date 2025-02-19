@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class InstructorLedTrainingsTest extends TestCase
 {
-    /** @test */
-    function it_returns_a_paginated_index()
+    function test_it_returns_a_paginated_index()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/InstructorLedTrainings/index.json')),
@@ -47,8 +46,7 @@ class InstructorLedTrainingsTest extends TestCase
         $this->assertTrue(Arr::has($model,'session_type'));
     }
 
-    /** @test */
-    function it_creates_a_record()
+    function test_it_creates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/InstructorLedTrainings/create.json')),
@@ -101,8 +99,7 @@ class InstructorLedTrainingsTest extends TestCase
         $this->assertTrue(Arr::has($response,'id'));
     }
 
-    /** @test */
-    function it_returns_a_paginated_index_of_locations()
+    function test_it_returns_a_paginated_index_of_locations()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/InstructorLedTrainings/locations.json')),
@@ -125,8 +122,7 @@ class InstructorLedTrainingsTest extends TestCase
         $this->assertTrue(Arr::has($model,'country_code'));
     }
 
-    /** @test */
-    function it_returns_a_list_of_timezones()
+    function test_it_returns_a_list_of_timezones()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/InstructorLedTrainings/timezones.json')),
@@ -144,8 +140,7 @@ class InstructorLedTrainingsTest extends TestCase
         $this->assertTrue(Arr::has($model,'name'));
     }
 
-    /** @test */
-    function it_returns_a_list_of_webinar_connections()
+    function test_it_returns_a_list_of_webinar_connections()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/InstructorLedTrainings/webinarConnections.json')),
@@ -164,8 +159,7 @@ class InstructorLedTrainingsTest extends TestCase
         $this->assertTrue(Arr::has($model,'has_default_password'));
     }
 
-    /** @test */
-    function it_returns_a_paginated_index_of_webinars()
+    function test_it_returns_a_paginated_index_of_webinars()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/InstructorLedTrainings/webinars.json')),
