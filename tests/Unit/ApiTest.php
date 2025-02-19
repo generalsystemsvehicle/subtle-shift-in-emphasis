@@ -12,8 +12,7 @@ use Illuminate\Support\Arr;
 
 class ApiTest extends TestCase
 {
-    /** @test */
-    function it_handles_a_json_response()
+    function test_it_handles_a_json_response()
     {
         $api = new Api();
 
@@ -33,8 +32,7 @@ class ApiTest extends TestCase
         $this->assertTrue(Arr::has($user,'locale'));
     }
 
-    /** @test */
-    function it_catches_a_request_exception()
+    function test_it_catches_a_request_exception()
     {
         $api = new Api();
 
@@ -47,8 +45,7 @@ class ApiTest extends TestCase
         $this->assertTrue(is_null($response));
     }
 
-    /** @test */
-    function it_handles_an_empty_json_response()
+    function test_it_handles_an_empty_json_response()
     {
         $api = new Api();
 
@@ -59,8 +56,7 @@ class ApiTest extends TestCase
         $this->assertTrue(is_null($response));
     }
 
-    /** @test */
-    function it_handles_an_xml_response()
+    function test_it_handles_an_xml_response()
     {
         $api = new Api();
 
@@ -72,8 +68,7 @@ class ApiTest extends TestCase
         $this->assertTrue(array_key_exists('id', $response));
     }
 
-    /** @test */
-    function it_handles_an_empty_xml_response()
+    function test_it_handles_an_empty_xml_response()
     {
         $api = new Api();
 
@@ -84,8 +79,7 @@ class ApiTest extends TestCase
         $this->assertTrue(is_null($response));
     }
 
-    /** @test */
-    function it_handles_a_learnupon_current_page_header()
+    function test_it_handles_a_learnupon_current_page_header()
     {
         $api = new Api();
 
@@ -100,8 +94,7 @@ class ApiTest extends TestCase
         $this->assertTrue(Arr::has($model,'current_page'));
     }
 
-    /** @test */
-    function it_handles_a_learnupon_records_per_page_header()
+    function test_it_handles_a_learnupon_records_per_page_header()
     {
         $api = new Api();
 
@@ -116,8 +109,7 @@ class ApiTest extends TestCase
         $this->assertTrue(Arr::has($model,'per_page'));
     }
 
-    /** @test */
-    function it_handles_a_learnupon_has_next_page_header()
+    function test_it_handles_a_learnupon_has_next_page_header()
     {
         $api = new Api();
 
@@ -132,8 +124,7 @@ class ApiTest extends TestCase
         $this->assertTrue(Arr::has($model,'has_next_page'));
     }
 
-    /** @test */
-    function it_handles_a_404_response()
+    function test_it_handles_a_404_response()
     {
         $api = new Api();
 
@@ -148,8 +139,7 @@ class ApiTest extends TestCase
         $this->assertTrue(is_null($response));
     }
 
-    /** @test */
-    function it_handles_a_422_response()
+    function test_it_handles_a_422_response()
     {
         $api = new Api();
 
@@ -164,8 +154,7 @@ class ApiTest extends TestCase
         $this->assertTrue(is_null($response));
     }
 
-    /** @test */
-    function it_throws_an_exception_for_other_bad_responses()
+    function test_it_throws_an_exception_for_other_bad_responses()
     {
         $this->expectException(RequestException::class);
 
