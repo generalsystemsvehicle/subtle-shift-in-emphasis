@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class PortalInvitesTest extends TestCase
 {
-    /** @test */
-    function it_creates_a_record()
+    function test_it_creates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/PortalInvites/create.json')),
