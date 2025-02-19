@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class LearningPathsTest extends TestCase
 {
-    /** @test */
-    function it_returns_a_paginated_index()
+    function test_it_returns_a_paginated_index()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/LearningPaths/index.json')),
