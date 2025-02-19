@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class UsersTest extends TestCase
 {
-    /** @test */
-    function it_returns_a_paginated_index()
+    function test_it_returns_a_paginated_index()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Users/index.json')),
@@ -33,8 +32,7 @@ class UsersTest extends TestCase
         $this->assertTrue(Arr::has($model,'locale'));
     }
 
-    /** @test */
-    function it_searches_for_a_record()
+    function test_it_searches_for_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Users/search.json')),
@@ -72,8 +70,7 @@ class UsersTest extends TestCase
         $this->assertTrue(Arr::has($model,'locale'));
     }
 
-    /** @test */
-    function it_gets_a_single_record()
+    function test_it_gets_a_single_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Users/get.json')),
@@ -95,8 +92,7 @@ class UsersTest extends TestCase
         $this->assertTrue(Arr::has($model,'locale'));
     }
 
-    /** @test */
-    function it_creates_a_record()
+    function test_it_creates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Users/create.json')),
@@ -135,8 +131,7 @@ class UsersTest extends TestCase
         $this->assertTrue(Arr::has($response,'id'));
     }
 
-    /** @test */
-    function it_updates_a_record()
+    function test_it_updates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Users/update.json')),
@@ -169,8 +164,7 @@ class UsersTest extends TestCase
         $this->assertTrue(Arr::has($response,'id'));
     }
 
-    /** @test */
-    function it_deletes_a_record()
+    function test_it_deletes_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Users/delete.json')),
@@ -184,8 +178,7 @@ class UsersTest extends TestCase
         $this->assertCount(0, $response);
     }
 
-    /** @test */
-    function it_returns_a_paginated_index_of_instructors()
+    function test_it_returns_a_paginated_index_of_instructors()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Users/instructors.json')),
@@ -207,8 +200,7 @@ class UsersTest extends TestCase
         $this->assertTrue(Arr::has($model,'user_type'));
     }
 
-    /** @test */
-    function it_gets_custom_user_data_fields()
+    function test_it_gets_custom_user_data_fields()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Users/customUserData.json')),
