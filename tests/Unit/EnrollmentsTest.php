@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class EnrollmentsTest extends TestCase
 {
-    /** @test */
-    function it_searches_for_a_record()
+    function test_it_searches_for_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Enrollments/search.json')),
@@ -69,8 +68,7 @@ class EnrollmentsTest extends TestCase
         $this->assertTrue(Arr::has($model,'date_enrolled'));
     }
 
-    /** @test */
-    function it_gets_a_single_record()
+    function test_it_gets_a_single_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Enrollments/get.json')),
@@ -92,8 +90,7 @@ class EnrollmentsTest extends TestCase
         $this->assertTrue(Arr::has($model,'date_enrolled'));
     }
 
-    /** @test */
-    function it_creates_a_record()
+    function test_it_creates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Enrollments/create.json')),
@@ -127,8 +124,7 @@ class EnrollmentsTest extends TestCase
         $this->assertTrue(Arr::has($response,'created_at'));
     }
 
-    /** @test */
-    function it_deletes_a_record()
+    function test_it_deletes_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Enrollments/delete.json')),
