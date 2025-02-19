@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class CoursesTest extends TestCase
 {
-    /** @test */
-    function it_returns_a_paginated_index()
+    function test_it_returns_a_paginated_index()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Courses/index.json')),
@@ -47,8 +46,7 @@ class CoursesTest extends TestCase
         $this->assertTrue(Arr::has($model,'date_published'));
     }
 
-    /** @test */
-    function it_creates_a_record()
+    function test_it_creates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Courses/create.json')),
@@ -81,8 +79,7 @@ class CoursesTest extends TestCase
         $this->assertTrue(Arr::has($response,'id'));
     }
 
-    /** @test */
-    function it_publishes_a_record()
+    function test_it_publishes_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Courses/publish.json')),
@@ -108,8 +105,7 @@ class CoursesTest extends TestCase
         $this->assertTrue(Arr::has($response,'id'));
     }
 
-    /** @test */
-    function it_clones_a_record()
+    function test_it_clones_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Courses/clone.json')),
@@ -136,8 +132,7 @@ class CoursesTest extends TestCase
         $this->assertCount(0, $response);
     }
 
-    /** @test */
-    function it_adds_a_module_to_a_record()
+    function test_it_adds_a_module_to_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Courses/addModule.json')),
@@ -170,8 +165,7 @@ class CoursesTest extends TestCase
         $this->assertTrue(Arr::has($response,'id'));
     }
 
-    /** @test */
-    function it_removes_a_module_to_a_record()
+    function test_it_removes_a_module_to_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Courses/removeModule.json')),
@@ -204,8 +198,7 @@ class CoursesTest extends TestCase
         $this->assertTrue(Arr::has($response,'id'));
     }
 
-    /** @test */
-    function it_updates_a_record()
+    function test_it_updates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Courses/update.json')),
@@ -225,8 +218,7 @@ class CoursesTest extends TestCase
         $this->assertTrue(Arr::has($response,'id'));
     }
 
-    /** @test */
-    function it_deletes_a_record()
+    function test_it_deletes_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Courses/delete.json')),
