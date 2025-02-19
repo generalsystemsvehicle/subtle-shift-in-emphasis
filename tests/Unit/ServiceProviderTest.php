@@ -13,8 +13,7 @@ use Illuminate\Contracts\Events\Dispatcher;
 
 class ServiceProviderTest extends TestCase
 {
-    /** @test */
-    function it_sets_up_a_listener()
+    function test_it_sets_up_a_listener()
     {
         $dispatcher = $this->app->make(Dispatcher::class);
 
@@ -35,16 +34,14 @@ class ServiceProviderTest extends TestCase
         $this->assertTrue($dispatcher->hasListeners(StubbedEvent::class));
     }
 
-    /** @test */
-    function it_cannot_bind_a_contract_without_an_implementation()
+    function test_it_cannot_bind_a_contract_without_an_implementation()
     {
         $this->expectException(BindingResolutionException::class);
 
         $this->app->make(StubbedContract::class);
     }
 
-    /** @test */
-    function it_binds_a_contract_to_an_implementation()
+    function test_it_binds_a_contract_to_an_implementation()
     {
         $provider = new LearnUponServiceProvider($this->app);
 
