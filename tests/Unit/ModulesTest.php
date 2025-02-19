@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class ModulesTest extends TestCase
 {
-    /** @test */
-    function it_returns_a_paginated_index()
+    function test_it_returns_a_paginated_index()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Modules/index.json')),
@@ -45,8 +44,7 @@ class ModulesTest extends TestCase
         $this->assertTrue(Arr::has($model,'created_at'));
     }
 
-    /** @test */
-    function it_creates_a_record()
+    function test_it_creates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Modules/create.json')),
