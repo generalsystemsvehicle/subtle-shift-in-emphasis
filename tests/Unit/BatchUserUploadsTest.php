@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class BatchUserUploadsTest extends TestCase
 {
-    /** @test */
-    function it_creates_an_upload()
+    function test_it_creates_an_upload()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/BatchUserUploads/create.json')),
@@ -66,8 +65,7 @@ class BatchUserUploadsTest extends TestCase
         $this->assertCount(0, $response);
     }
 
-    /** @test */
-    function it_creates_and_syncs_an_upload()
+    function test_it_creates_and_syncs_an_upload()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/BatchUserUploads/create.json')),
