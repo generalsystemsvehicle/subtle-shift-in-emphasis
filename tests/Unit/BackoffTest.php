@@ -17,8 +17,7 @@ use GuzzleHttp\Psr7\Response;
 
 class BackoffTest extends TestCase
 {
-    /** @test */
-    public function it_retries_after_a_connect_exception()
+    public function test_it_retries_after_a_connect_exception()
     {
         $mock = new MockHandler(
             [
@@ -38,8 +37,7 @@ class BackoffTest extends TestCase
         $this->assertEquals(200, $client->request('get', '/')->getStatusCode());
     }
 
-    /** @test */
-    public function it_fails_to_retry_after_limit()
+    public function test_it_fails_to_retry_after_limit()
     {
         $this->expectException(ClientException::class);
         $this->expectExceptionMessage('Error 5');
@@ -66,8 +64,7 @@ class BackoffTest extends TestCase
         $client->request('get', 'test')->getStatusCode();
     }
 
-    /** @test */
-    public function it_retries_after_delay()
+    public function test_it_retries_after_delay()
     {
         $mock = new MockHandler(
             [
@@ -79,7 +76,7 @@ class BackoffTest extends TestCase
         $handler = HandlerStack::create($mock);
 
         $delayCalls = 0;
-        $delayCallback = function ($retries, Response $response = null) use (&$delayCalls) {
+        $delayCallback = function ($retries, ?Response $response = null) use (&$delayCalls) {
             $delayCalls++;
 
             return Backoff::delay()($retries, $response);
@@ -98,8 +95,7 @@ class BackoffTest extends TestCase
         $this->assertEquals(1, $delayCalls);
     }
 
-    /** @test */
-    public function it_retries_429_errors()
+    public function test_it_retries_429_errors()
     {
         $mock = new MockHandler(
             [
@@ -123,8 +119,7 @@ class BackoffTest extends TestCase
         $this->assertEquals(2, count($container));
     }
 
-    /** @test */
-    public function it_retries_500_errors()
+    public function test_it_retries_500_errors()
     {
         $mock = new MockHandler(
             [
@@ -148,8 +143,7 @@ class BackoffTest extends TestCase
         $this->assertEquals(2, count($container));
     }
 
-    /** @test */
-    public function it_calculates_delay()
+    public function test_it_calculates_delay()
     {
         Backoff::$isDelayEnabled = true;
 
