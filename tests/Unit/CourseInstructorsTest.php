@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class CourseInstructorsTest extends TestCase
 {
-    /** @test */
-    function it_returns_a_paginated_index()
+    function test_it_returns_a_paginated_index()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/CourseInstructors/index.json')),
@@ -42,8 +41,7 @@ class CourseInstructorsTest extends TestCase
         $this->assertTrue(Arr::has($model,'date_published'));
     }
 
-    /** @test */
-    function it_creates_a_record()
+    function test_it_creates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/CourseInstructors/create.json')),
@@ -77,8 +75,7 @@ class CourseInstructorsTest extends TestCase
         $this->assertTrue(Arr::has($response,'created_at'));
     }
 
-    /** @test */
-    function it_deletes_a_record()
+    function test_it_deletes_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/CourseInstructors/delete.json')),
@@ -91,5 +88,4 @@ class CourseInstructorsTest extends TestCase
         $this->assertIsArray($response);
         $this->assertCount(0, $response);
     }
-
 }
