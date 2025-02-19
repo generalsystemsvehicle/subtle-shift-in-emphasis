@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class LearningPathEnrollmentsTest extends TestCase
 {
-    /** @test */
-    function it_returns_a_paginated_index()
+    function test_it_returns_a_paginated_index()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/LearningPathEnrollments/index.json')),
@@ -81,8 +80,7 @@ class LearningPathEnrollmentsTest extends TestCase
         $this->assertIsArray(Arr::get($response, 'enrollments'));
     }
 
-    /** @test */
-    function it_gets_a_single_record()
+    function test_it_gets_a_single_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/LearningPathEnrollments/get.json')),
@@ -107,8 +105,7 @@ class LearningPathEnrollmentsTest extends TestCase
         $this->assertTrue(Arr::has($model,'cert_expires_at'));
     }
 
-    /** @test */
-    function it_creates_a_record()
+    function test_it_creates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/LearningPathEnrollments/create.json')),
