@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class MarkCompletesTest extends TestCase
 {
-    /** @test */
-    function it_returns_a_paginated_index()
+    function test_it_returns_a_paginated_index()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/MarkCompletes/index.json')),
@@ -35,8 +34,7 @@ class MarkCompletesTest extends TestCase
         $this->assertTrue(Arr::has($model,'date_completed'));
     }
 
-    /** @test */
-    function it_creates_a_record()
+    function test_it_creates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/MarkCompletes/create.json')),
