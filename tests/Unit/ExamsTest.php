@@ -12,8 +12,7 @@ use Illuminate\Support\Arr;
 
 class ExamsTest extends TestCase
 {
-    /** @test */
-    function it_gets_a_single_record()
+    function test_it_gets_a_single_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Exams/get.json')),
@@ -32,8 +31,7 @@ class ExamsTest extends TestCase
         $this->assertTrue(Arr::has($model,'exam_id'));
     }
 
-    /** @test */
-    function it_gets_a_list_of_questions()
+    function test_it_gets_a_list_of_questions()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Exams/questions.json')),
@@ -56,8 +54,7 @@ class ExamsTest extends TestCase
         $this->assertIsArray(Arr::get($model, 'answers'));
     }
 
-    /** @test */
-    function it_gets_a_list_of_enrollments()
+    function test_it_gets_a_list_of_enrollments()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Exams/enrollments.json')),
@@ -80,8 +77,7 @@ class ExamsTest extends TestCase
         $this->assertTrue(Arr::has($model,'portal_membership_id'));
     }
 
-    /** @test */
-    function it_gets_a_list_of_submitted_answers()
+    function test_it_gets_a_list_of_submitted_answers()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Exams/answers.json')),
