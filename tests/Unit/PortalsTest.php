@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class PortalsTest extends TestCase
 {
-    /** @test */
-    function it_returns_a_paginated_index()
+    function test_it_returns_a_paginated_index()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Portals/index.json')),
@@ -33,8 +32,7 @@ class PortalsTest extends TestCase
         $this->assertTrue(Arr::has($model,'created_at'));
     }
 
-    /** @test */
-    function it_creates_a_record()
+    function test_it_creates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Portals/create.json')),
@@ -78,8 +76,7 @@ class PortalsTest extends TestCase
         $this->assertTrue(Arr::has($response,'id'));
     }
 
-    /** @test */
-    function it_updates_a_record()
+    function test_it_updates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Portals/update.json')),
@@ -107,8 +104,7 @@ class PortalsTest extends TestCase
         $this->assertTrue(Arr::has($response,'id'));
     }
 
-    /** @test */
-    function it_deletes_a_record()
+    function test_it_deletes_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Portals/delete.json')),
@@ -122,8 +118,7 @@ class PortalsTest extends TestCase
         $this->assertCount(0, $response);
     }
 
-    /** @test */
-    function it_generates_api_keys()
+    function test_it_generates_api_keys()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/Portals/generateKeys.json')),
