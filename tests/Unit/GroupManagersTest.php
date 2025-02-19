@@ -10,8 +10,7 @@ use Illuminate\Support\Arr;
 
 class GroupManagersTest extends TestCase
 {
-    /** @test */
-    function it_returns_a_paginated_index()
+    function test_it_returns_a_paginated_index()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/GroupManagers/index.json')),
@@ -69,8 +68,7 @@ class GroupManagersTest extends TestCase
         $this->assertIsArray(Arr::get($response, 'group_manager'));
     }
 
-    /** @test */
-    function it_creates_a_record()
+    function test_it_creates_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/GroupManagers/create.json')),
@@ -112,8 +110,7 @@ class GroupManagersTest extends TestCase
         $this->assertTrue(Arr::has($response,'created_at'));
     }
 
-    /** @test */
-    function it_deletes_a_record()
+    function test_it_deletes_a_record()
     {
         $mock = new MockHandler([
             new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__.'/../Fixtures/GroupManagers/delete.json')),
